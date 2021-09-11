@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="placeScanValidityMinutes">20</integer>
+    <integer name="ordersLoadValidityMinutes">60</integer>
+    <string name="netDriverVersion">3.3</string>
+    <integer name="locationUpdateIntervalSeconds">300</integer>
+    <integer name="locationFastestIntervalSeconds">2</integer>
+    <integer name="maximumScannedBarcodes">75</integer>
+</resources>

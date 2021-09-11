@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <TextView
+        android:text="Please Confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmText"
+
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/cancelButton"
+        android:layout_toEndOf="@+id/cancelButton"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        />
+
+    <ImageButton
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:id="@+id/cancelButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"
+        />
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@mipmap/ic_return"
+        android:id="@+id/actionIcon"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/confirmText"
+        android:src="@mipmap/fingerleft"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:id="@+id/imageAction"
+
+        />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:layout_marginTop="23dp"
+        android:paddingRight="5dp"
+        android:layout_below="@+id/imageAction"
+        android:layout_centerHorizontal="true"
+        android:textSize="24dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+
+        />
+
+</RelativeLayout>

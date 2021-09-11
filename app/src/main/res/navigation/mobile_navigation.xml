@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="lb.com.thenet.netdriver.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_checkout"
+        android:name="lb.com.thenet.netdriver.ui.checkout.CheckoutFragment"
+        android:label="Check Out"
+        tools:layout="@layout/fragment_checkout" />
+
+    <fragment
+        android:id="@+id/nav_checkin"
+        android:name="lb.com.thenet.netdriver.ui.checkin.CheckinFragment"
+        android:label="Check In"
+        tools:layout="@layout/fragment_checkin" />
+
+    <fragment
+        android:id="@+id/nav_bulkPickup"
+        android:name="lb.com.thenet.netdriver.ui.bulkpickup.BulkPickupFragment"
+        android:label="Bulk Pickup"
+        tools:layout="@layout/fragment_bulk_pickup" />
+
+
+    <fragment
+        android:id="@+id/nav_liaison"
+        android:name="lb.com.thenet.netdriver.ui.liaison.LiaisonFragment"
+        android:label="Liaison"
+        tools:layout="@layout/fragment_lialson" />
+
+    <fragment
+        android:id="@+id/nav_delivery"
+        android:name="lb.com.thenet.netdriver.ui.delivery.DeliveryNavigationFragment"
+        android:label="Delivery"
+        tools:layout="@layout/fragment_stops_navigation" />
+
+    <fragment
+        android:id="@+id/nav_pickup"
+        android:name="lb.com.thenet.netdriver.ui.delivery.PickupNavigationFragment"
+        android:label="Pickup"
+        tools:layout="@layout/fragment_stops_navigation" />
+
+    <fragment
+        android:id="@+id/nav_adjust"
+        android:name="lb.com.thenet.netdriver.ui.weightadjust.WeightAdjustFragment"
+        android:label="Adjust"
+        tools:layout="@layout/fragment_weight_adjust" />
+
+    <fragment
+        android:id="@+id/nav_codlist"
+        android:name="lb.com.thenet.netdriver.ui.codlist.CODListFragment"
+        android:label="COD List"
+        tools:layout="@layout/fragment_cod_list" />
+
+    <fragment
+        android:id="@+id/nav_checkstatus"
+        android:name="lb.com.thenet.netdriver.ui.checkstatus.CheckStatusFragment"
+        android:label="Check Status"
+        tools:layout="@layout/fragment_check_status" />
+
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="lb.com.thenet.netdriver.ui.tools.ToolsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_tools" />
+
+    <!--fragment
+        android:id="@+id/nav_logout"
+        android:name="lb.com.thenet.netdriver.ui.home.HomeFragment"
+        android:label="@string/logout"
+        tools:layout="@layout/fragment_home" /-->
+
+</navigation>

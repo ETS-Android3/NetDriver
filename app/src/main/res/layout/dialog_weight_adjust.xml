@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="400dp"
+    android:layout_height="match_parent" >
+
+
+    <ImageButton
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:id="@+id/weightAdjustCancelButton"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/editTextLength"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+            android:hint="Len."
+            android:inputType="numberDecimal"
+            />
+        <EditText
+            android:id="@+id/editTextWidth"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+            android:hint="Wid."
+            android:inputType="numberDecimal"
+            />
+        <EditText
+            android:id="@+id/editTextHeight"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+            android:hint="Hgth."
+            android:inputType="numberDecimal"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/editTextChargeable"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+            android:hint="Char."
+            android:inputType="numberDecimal"
+            />
+        <EditText
+            android:id="@+id/editTextVolumetric"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+            android:hint="Vmrc"
+            android:inputType="numberDecimal"
+            />
+        <EditText
+            android:id="@+id/editTextVolume"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+            android:hint="Vol."
+            android:inputType="numberDecimal"
+            />
+        <EditText
+            android:id="@+id/editTextNOP"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+            android:hint="NOP"
+            android:inputType="numberSigned"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="24dp"
+        >
+        <Button
+            android:id="@+id/weightAdjustConfirmButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:textSize="24dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:id="@+id/weightAdjustConfirmCopyButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Copy"
+            android:textSize="24dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

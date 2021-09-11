@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="func_scanbuilding_key">q1Y5eirq01kUvdZysr9vWHeamuW/LaMneFQB5wqFoe7tG4/LlNvUfw==</string>
+    <string name="func_scanbuilding_url">scanbuilding</string>
+
+    <string name="func_checkin_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_checkin_url">events/checkin</string>
+    <string name="func_checkout_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_checkout_url">events/checkout</string>
+    <string name="func_liaison_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_liaison_url">events/liason</string>
+    <string name="func_bulkpickup_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_bulkpickup_url">events/bulkpickup</string>
+
+
+    <string name="func_specialdeliveries_key">tqM6plFR3DYaL1WXDiOhbVmCoObIW3A7js5a2gIZ2n1Jd5A0RtI4Kg==</string>
+    <string name="func_specialdeliveries_url">specialdeliveries</string>
+
+    <!--string name="func_login_key">X8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_login_url">authentication/login</string-->
+
+    <string name="func_deliverystops_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_deliverystops_url">stops</string>
+
+    <string name="func_getactionroutes_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_getactionroutes_url">actionRoutes</string>
+
+    <string name="func_startstop_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_startstop_url">stops/start</string>
+
+    <string name="func_stopstop_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_stopstop_url">stops/stop</string>
+
+    <string name="func_acceptstop_key">lnzXqOYJNixqj1id7jP3z4m1RpmlzjNan/x7i6RvLaZUS1CLm8TACA==</string>
+    <string name="func_acceptstop_url">stops/accept</string>
+
+    <string name="func_rejectstop_key">PRK0D6TqOlsmTS/OpFMGQxc5CripdoIDIunkcahfSK1xMwRuLHeHRw==</string>
+    <string name="func_rejectstop_url">stops/reject</string>
+
+    <string name="func_sendSignature_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_sendSignature_url">signature</string>
+
+    <string name="func_sendSignaturebinary_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_sendSignaturebinary_url">signaturebinary</string>
+
+    <string name="func_senddelivery_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_senddelivery_url">events/delivery</string>
+
+    <string name="func_senddeliverycod_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_senddeliverycod_url">events/deliverycod</string>
+
+    <string name="func_sendnondelivery_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_sendnondelivery_url">events/nondelivery</string>
+
+    <string name="func_sendpickup_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_sendpickup_url">events/pickup</string>
+
+    <string name="func_sendpickupcod_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_sendpickupcod_url">events/pickupcod</string>
+
+    <string name="func_sendnonpickup_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_sendnonpickup_url">events/nonpickup</string>
+
+    <string name="func_getnetlocker_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_getnetlocker_url">netlockers</string>
+
+    <string name="func_runsheet_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_runsheet_url">runsheet</string>
+
+    <string name="func_settings_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_settings_url">settings</string>
+
+    <string name="func_retourorder_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_retourorder_url">retourorder</string>
+
+    <string name="func_weightadjust_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_weightadjust_url">weightadjust</string>
+
+    <string name="func_receivedStops_key">aTJAz9M2Ahj1WVHJmg4FURnxRASSLsqs0C2OZRHeHaUF1AGiQtFdhg==</string>
+    <string name="func_receivedStops_url">stops/received</string>
+
+    <string name="func_checklabel_key">K5PGeUHZxN5lXOIfvOCn7A1MGKY5TqICd80iSU9bm0H2oUN5E05x5w==</string>
+    <string name="func_checklabel_url">check</string>
+
+    <string name="func_codlist_key">2hzbNQidnkCTY2DQabhYQMGXYCr39xtNR1Wigxg/soUurhrgCZhClw==</string>
+    <string name="func_codlist_url">codCollected</string>
+
+    <string name="func_delegates_key">aTJAz9M2Ahj1WVHJmg4FURnxRASSLsqs0C2OZRHeHaUF1AGiQtFdhg==</string>
+    <string name="func_delegates_url">authentication/listofdrivers</string>
+
+
+    <string name="func_checkstatus_key">8J5oemgClfo1DPB/j6paDvpAqvpUUsumQfxnkU0bcZYfk6mpGZ9X4Q==</string>
+    <string name="func_checkstatus_url">status</string>
+
+</resources>

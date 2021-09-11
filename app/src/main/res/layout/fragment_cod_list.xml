@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/codListTotalLBP"
+        android:text="Total Local: "
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/codListTotalLBPDetails"
+        android:text=""
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/codListTotalUSD"
+        android:text="Total USD: "
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/codListTotalUSDDetails"
+        android:text=""
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:id="@+id/codListRecycler"
+        tools:listitem="@layout/cod_list_item"
+        android:background="@android:color/white"
+
+        />
+
+</LinearLayout>

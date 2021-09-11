@@ -1,0 +1,168 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/labelCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="2dp"
+
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/labelConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/labelShipmentTypeImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:id="@+id/labelRetourImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            android:src="@mipmap/ic_return"
+            android:visibility="gone"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/labelRightArrowImage"
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:src="@mipmap/rightarrow"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="invisible"
+            />
+
+
+
+        <TextView
+            android:id="@+id/labelLabelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="99918378736"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintEnd_toStartOf="@+id/labelRightArrowImage"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+
+            />
+
+        <TextView
+            android:id="@+id/labelShipperReferenceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="99918378736"
+            card_view:layout_constraintEnd_toStartOf="@id/labelRightArrowImage"
+            card_view:layout_constraintTop_toBottomOf="@+id/labelLabelText"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:id="@+id/labelCODText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintEnd_toStartOf="@id/labelRightArrowImage"
+            card_view:layout_constraintTop_toBottomOf="@+id/labelShipperReferenceText"
+            android:text="150,000LL | 100USD"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:textStyle="bold"
+            android:padding="2dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/labelFromTo"
+            card_view:layout_constraintTop_toBottomOf="@id/labelCODText"
+            card_view:layout_constraintEnd_toStartOf="@id/labelRightArrowImage"
+
+            android:textSize="20dp"
+            />
+        <ImageView
+            android:id="@+id/labelIsScannedImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            card_view:layout_constraintTop_toBottomOf="@id/labelCODText"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            android:src="@mipmap/greentick"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/labelIsNotScannedImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            card_view:layout_constraintTop_toBottomOf="@id/labelCODText"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            android:src="@mipmap/redcross"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/btnRetour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintStart_toStartOf="parent"
+            android:text="@string/retour"
+            card_view:layout_constraintTop_toBottomOf="@+id/labelIsScannedImage"
+            style="@style/button.AccentStyle"
+            android:layout_margin="6dp"
+            android:padding="2dp"
+            />
+        <Button
+            android:id="@+id/btnRefund"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintStart_toEndOf="@id/btnRetour"
+            card_view:layout_constraintTop_toBottomOf="@id/labelIsScannedImage"
+            android:text="@string/refund"
+            style="@style/button.AccentStyle"
+            android:layout_margin="6dp"
+            android:padding="2dp"
+
+            />
+        <TextView
+            android:id="@+id/tvConsignee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintBottom_toTopOf="@id/btnRetour"
+            android:text=""
+            android:layout_margin="6dp"
+            android:padding="2dp"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+
+            />
+        <ImageView
+            android:id="@+id/infoImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_dialog_info"
+            android:scaleType="centerCrop"
+            card_view:layout_constraintEnd_toStartOf="@id/labelLabelText"
+            card_view:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

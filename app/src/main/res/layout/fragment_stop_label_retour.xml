@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true"
+    >
+
+    <ProgressBar
+        android:id="@+id/retourProgress"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+
+
+    <TextView
+        android:id="@+id/retourLabelText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Please Scan Label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintTop_toBottomOf="@id/retourProgress"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/retourType"
+        app:layout_constraintTop_toBottomOf="@id/retourLabelText"
+        >
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cash"
+            android:checked="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:id="@+id/retourTypeCashRadio"
+            />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Domestic"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:id="@+id/retourTypeDomesticRadio"
+            />
+    </RadioGroup>
+
+
+
+    <EditText
+        android:id="@+id/retourAmountText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/retourType"
+        android:layout_marginLeft="8dp"
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:hint="Amount"
+        android:inputType="number"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/retourCurrency"
+        app:layout_constraintTop_toBottomOf="@id/retourAmountText"
+        >
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/usd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:id="@+id/retourUSDRadio"
+            />
+        <RadioButton
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lbp"
+            android:checked="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:id="@+id/retourLBPRadio"
+            />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/retourSpecialInstructionsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/retourCurrency"
+        android:hint="Special Instructions"
+        android:layout_marginLeft="8dp"
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:maxHeight="200dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/retourBackButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        style="@style/button.CancelStyle"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:text="&lt;&lt; Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retourSpecialInstructionsText"
+        android:layout_marginTop="130dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        />
+    <Button
+        android:id="@+id/retourSendButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        style="@style/button.OkStyle"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:text="Confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retourSpecialInstructionsText"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
