@@ -28,6 +28,7 @@ public class BaseViewModel extends AndroidViewModel {
     private MutableLiveData<Boolean> mLock;
     private MutableLiveData<Boolean> mShouldLogin;
 
+
     private static DriverRepository mDriverRepository;
     private GeneralServices mGeneralServices;
     private MutableLiveData<ResponseMessage<Boolean>> mRunSheetResponse;
