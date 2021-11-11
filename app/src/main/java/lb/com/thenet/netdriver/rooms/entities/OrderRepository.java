@@ -12,6 +12,7 @@ import java.util.List;
 //import lb.com.thenet.netdriver.onlineservices.json.ActionRoute;
 import lb.com.thenet.netdriver.GlobalCoordinator;
 import lb.com.thenet.netdriver.TypeConverters;
+import lb.com.thenet.netdriver.notificationtypes.updateCODType;
 import lb.com.thenet.netdriver.onlineservices.DriverServices;
 import lb.com.thenet.netdriver.onlineservices.json.JsonStop;
 import lb.com.thenet.netdriver.onlineservices.json.OrderType;
@@ -202,6 +203,9 @@ public class OrderRepository {
         new deleteStopLabelAsync(stopLabelDao, stopDao).execute(stopLabel);
     }
 
+    public void updateOrderCOD(updateCODType updateData){
+        new updateCODAsync(stopLabelDao).execute(updateData);
+    }
 
     /**
      * Deletes all words from the database (does not delete the table).
@@ -567,6 +571,7 @@ public class OrderRepository {
         }
     }
 
+
     private static class insertStopLabelAsync extends AsyncTask<StopLabel, Void, Void> {
 
         private StopLabelDao stopLabelDao;
@@ -597,6 +602,7 @@ public class OrderRepository {
             return null;
         }
     }
+
 
     private static class deleteOrdersAsync extends AsyncTask<String, Void, Void>{
         private StopDao stopDao;
@@ -648,6 +654,19 @@ public class OrderRepository {
         protected void onPostExecute(Stop stop) {
             super.onPostExecute(stop);
 
+        }
+    }
+
+    private static class updateCODAsync extends AsyncTask<updateCODType, Void, Void>{
+
+        private StopLabelDao _stopLabelDao;
+        public updateCODAsync(StopLabelDao stopLabelDao){
+            this._stopLabelDao = stopLabelDao;
+        }
+        @Override
+        protected Void doInBackground(updateCODType... updateCODTypes) {
+            _stopLabelDao.updateCOD(updateCODTypes[0].orderId,updateCODTypes[0].hawb,updateCODTypes[0].codLBP,updateCODTypes[0].codUSD);
+            return null;
         }
     }
 }

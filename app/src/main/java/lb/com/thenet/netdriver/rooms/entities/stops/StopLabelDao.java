@@ -42,4 +42,6 @@ public interface StopLabelDao {
     @Query("SELECT * FROM " + GlobalCoordinator.STOP_LABEL_TABLE + " where stopId like :stopId AND orderId like :orderId AND hawb like :label")
     StopLabel[] getStopLabelOfOrderId(String stopId, String orderId, String label);
 
+    @Query("Update " + GlobalCoordinator.STOP_LABEL_TABLE + " SET codLBP = :codLBP, codUSD = :codUSD WHERE orderId like :orderId AND hawb like :hawb")
+    void updateCOD(String orderId, String hawb, double codLBP, double codUSD);
 }

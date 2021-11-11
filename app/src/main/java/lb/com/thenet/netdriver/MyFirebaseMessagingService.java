@@ -9,8 +9,11 @@ import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
 
+import lb.com.thenet.netdriver.notificationtypes.updateCODType;
+import lb.com.thenet.netdriver.onlineservices.json.OrderType;
 import lb.com.thenet.netdriver.onlineservices.json.ResponseMessage;
 import lb.com.thenet.netdriver.rooms.entities.DriverRepository;
+import lb.com.thenet.netdriver.rooms.entities.OrderRepository;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
@@ -61,16 +64,18 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
             }
         }
-        /*
+
         switch (remoteMessage.getData().get("type")){
-            case "cancelOrder":
-                Type notificationMessage = new TypeToken<cancelORderType(){}.getType();
+            case "updateCOD":
+                Type notificationMessage = new TypeToken<updateCODType>(){}.getType();
                 Gson converter = new Gson();
-                cancelOrderType message = converter.fromJson(remoteMessage.getData().get("data"),notificationMessage);
-                break;;
+                updateCODType message = converter.fromJson(remoteMessage.getData().get("data"),notificationMessage);
+                OrderRepository repository = new OrderRepository(this.getApplication(), OrderType.ALL);
+                repository.updateOrderCOD(message);
+                break;
         }
 
-         */
+
 
 
         // Check if message contains a notification payload.
